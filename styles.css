@@ -1,0 +1,22 @@
+.card {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 0px 20px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.libros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+img {
+    width: 8rem;
+    height: auto;
+}
