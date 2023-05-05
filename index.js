@@ -71,6 +71,18 @@ document.body.appendChild(parrafo) */
 for (let i = 0; i < books.length; i++) {
 
     //Creacion de divs
+    /*     
+    hacer una funcion para poder evitar repetir tanto codigo. Darle un par de vueltecillas.
+
+    function meterDivACard(clase, hijo) {
+            let card = document.createElement("div");
+            card.classList.add(clase);
+            section.appendChild(hijo);
+        };
+    
+        meterDivACard('card', card)
+        meterDivACard('info', info)
+        meterDivACard('media', media) */
     let card = document.createElement("div");
     card.classList.add("card");
     section.appendChild(card);
@@ -82,7 +94,7 @@ for (let i = 0; i < books.length; i++) {
     let media = document.createElement('div');
     media.classList.add('media');
     card.appendChild(media);
-
+    //Aqui se esta repitiendo código. Una función vendría bien.
     //creacion de p
     let pAuthor = document.createElement('p')
     pAuthor.innerHTML = books[i].author;
@@ -113,4 +125,3 @@ for (let i = 0; i < books.length; i++) {
     media.appendChild(imagen);
 }
 
-//meter el valor del link en el atributo src de las imagenes
